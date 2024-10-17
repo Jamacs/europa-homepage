@@ -47,13 +47,14 @@ body {
 
 img {
     width: 100px;
+    border-radius: 50%;
 } 
 
 .hero-section {
     background: url("https://gtwallpaper.org/sites/default/files/wallpaper/224374/europa-moon-wallpapers-224374-1726472-3231023.png"); 
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 7%;
+    padding: 7%; 
 }
 
 #headline {
@@ -65,7 +66,7 @@ img {
     width: 30%;
     max-width: 425px; 
     display: block;
-    margin: 190px auto 20px auto; 
+    margin: 90px auto 20px auto; 
     padding: 2px;
     max-height: 120px;
     height: 30%; 
@@ -76,7 +77,7 @@ img {
 
 #subtitle-section {
     font-size: 22px;
-    margin: auto; /* Centered with auto margins */
+    margin: 2% auto 7% auto; /* Centered with auto margins */
     color: #fff;
     background-color: #000; 
     border-radius: 20px; /* Slight radius for rectangle shape */
@@ -91,7 +92,11 @@ img {
 #activities-section {
     font-size: 42px;
     color: #fff;
-    margin: 6em auto 0 0; 
+    margin: 2em auto 0 0; 
+    /* display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end; */
 }
 
 #guide-section {
