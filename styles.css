@@ -6,6 +6,23 @@ AQUA: #A8DADC
 LIGHT BLUE: #457B9D
 DARK BLUE: #1D3557
 
+Setting background color 
+.element {
+    background-color: blue;
+}
+
+Setting background image size 
+.element-with-image {
+    background-image: url('image.jpg');
+    background-size: cover;
+}
+
+Using shorthand to set multiple background properties 
+.element-shorthand {
+    background: url('image.jpg') no-repeat center/cover blue;
+}
+
+
 */
 
 .agdasima-regular {
@@ -19,21 +36,25 @@ DARK BLUE: #1D3557
     font-weight: 700;
     font-style: normal;
 }
-  
+
 
 body {
     font-family: "Agdasima", sans-serif;
     margin: 0;
     text-align: center;
-    background: url("https://gtwallpaper.org/sites/default/files/wallpaper/224374/europa-moon-wallpapers-224374-1726472-3231023.png"); 
-    background-repeat: no-repeat;
-    background-size: contain;
     background-color: #495057;
 }
 
 img {
     width: 100px;
 } 
+
+.hero-section {
+    background: url("https://gtwallpaper.org/sites/default/files/wallpaper/224374/europa-moon-wallpapers-224374-1726472-3231023.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px;
+}
 
 #headline {
     font-family: "Agdasima", sans-serif;
@@ -53,7 +74,7 @@ img {
     width: 50%;
 }
 
-#hero-section {
+#subtitle-section {
     font-size: 22px;
     margin: auto; /* Centered with auto margins */
     color: #fff;
@@ -70,7 +91,12 @@ img {
 #activities-section {
     font-size: 42px;
     color: #fff;
-    margin: 6em auto 0 0;
+    margin: 6em auto 0 0; 
+}
+
+#guide-section {
+    font-size: 32px;
+    color: #fff;
 }
 
 
