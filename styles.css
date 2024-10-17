@@ -63,9 +63,11 @@ img {
     margin-top: 3em;  
     color: #fff;
     background-color: #000; 
-    border-radius: 17%; 
+    /* border-radius: 17%;  */
+    border-radius: 50px / 25px;
     margin: 10%;
     width: auto;
+    /* max-width: max-content; */
     padding: 2px;
 } 
 
