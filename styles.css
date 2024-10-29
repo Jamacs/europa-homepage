@@ -45,9 +45,20 @@ body {
     background-color: #495057;
 }
 
+p {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 40px;
+}
+
 img {
-    width: 100px;
+    width: 100%;
+    max-width: 300px;
+    height: 70%;
     border-radius: 50%;
+    object-fit: cover;
 } 
 
 .hero-section {
@@ -90,13 +101,34 @@ img {
 } 
 
 #activities-section {
-    font-size: 42px;
+    font-size: 47px;
     color: #fff;
-    margin: 2em auto 0 0; 
-    /* display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end; */
+    margin: 2em auto 0 0;
+}
+
+.activities-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.activities-wrapper > img,
+.activities-wrapper > h4,
+.activities-wrapper > p {
+    flex: 1 1 30%; 
+    margin: 0 10px;
+}
+
+.activities-wrapper > img {
+    order: 1;
+}
+
+.activities-wrapper > h4 {
+    order: 2;
+}
+
+.activities-wrapper > p {
+    order: 3;
 }
 
 #guide-section {
