@@ -58,7 +58,7 @@ img {
     max-width: 300px;
     height: 70%;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: none;
 } 
 
 .hero-section {
@@ -109,7 +109,7 @@ img {
 .activities-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around; 
 }
 
 .activities-wrapper > img,
@@ -132,8 +132,9 @@ img {
 }
 
 #guide-section {
+    background-color: #fff;
     font-size: 32px;
-    color: #fff;
+    color: #000;
 }
 
 
