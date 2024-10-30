@@ -53,6 +53,10 @@ h4 {
     font-size: 40px;
 }
 
+h3 {
+    font-size: 50px;
+}
+
 img {
     width: 100%;
     max-width: 300px;
@@ -103,13 +107,14 @@ img {
 #activities-section {
     font-size: 47px;
     color: #fff;
-    margin: 2em auto 0 0;
+    margin: 2em;
 }
 
 .activities-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
+    padding: 2em 0;
 }
 
 .activities-wrapper > img,
@@ -121,6 +126,7 @@ img {
 
 .activities-wrapper > img {
     order: 1;
+    margin-bottom: 1.5em;
 }
 
 .activities-wrapper > h4 {
@@ -136,44 +142,54 @@ img {
 }
 
 #guide-section {
-    background: #A8DADC;
+    background: #fff;
     max-height: 820px;
     height: 100%;
     display: inline-block;
     margin: 12%;
-    border-radius: 10px;
 }
 
-.card {
+#card {
     background: #A8DADC;
-    box-shadow: #000;
-    border-radius: 10px;
+    border-bottom: 12px solid #000;
+    border-radius: 30px;
     font-size: 32px;
     color: #000;
     display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-around; 
+    justify-content: space-between;
+    flex-direction: row;
     max-width: 600px;
+    max-height: 500px;
+    padding: 20px;
 }
 
-.card > h3,
-.card > p, 
-.card > h4, {
-    order: 1;
-}
-
-.card > img {
+.text-content {
     order: 2;
-    border-radius: none;
 }
 
-/* .card > h3,
-.card > p,
-.card > h4,
-.card > img {
+.quote {
+    font-style: italic;
+}
+
+#card > img {
     flex: 1 1 50%; 
-    margin: 0 10px;
-}  */
+    border-radius: 0px;
+    max-width: 100%; 
+}
+
+/* #card > .text-content {
+    flex: 1 1 50%; 
+    margin-right: 10px; 
+}
+
+
+#card > .text-content > h3,
+#card > .text-content > p, 
+#card > .text-content > h4 {
+    margin: 0 0 10px 0; 
+} */
+
+
 
 
 
