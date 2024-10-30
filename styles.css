@@ -131,10 +131,51 @@ img {
     order: 3;
 }
 
+.guide-background-layer {
+    background: #fff;
+}
+
 #guide-section {
-    background-color: #fff;
+    background: #A8DADC;
+    max-height: 820px;
+    height: 100%;
+    display: inline-block;
+    margin: 12%;
+    border-radius: 10px;
+}
+
+.card {
+    background: #A8DADC;
+    box-shadow: #000;
+    border-radius: 10px;
     font-size: 32px;
     color: #000;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around; 
+    max-width: 600px;
 }
+
+.card > h3,
+.card > p, 
+.card > h4, {
+    order: 1;
+}
+
+.card > img {
+    order: 2;
+    border-radius: none;
+}
+
+/* .card > h3,
+.card > p,
+.card > h4,
+.card > img {
+    flex: 1 1 50%; 
+    margin: 0 10px;
+}  */
+
+
+
 
 
