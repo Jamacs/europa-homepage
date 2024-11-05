@@ -59,7 +59,7 @@ h3 {
 
 img {
     width: 100%;
-    height: auto;
+    height: 7em;
     max-width: 300px;
     border-radius: 50%;
     object-fit: none;
@@ -111,7 +111,7 @@ img {
 }
 
 .activities-wrapper {
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
     justify-content: space-around; 
     padding: 2em 0;
@@ -127,6 +127,7 @@ img {
 .activities-wrapper > img {
     order: 1;
     margin-bottom: 1.5em;
+    border: 7px solid #A8DADC;
 }
 
 .activities-wrapper > h4 {
@@ -172,37 +173,56 @@ img {
 }
 
 #card > img {
+    height: 100%;
     flex: 1 1 50%; 
     border-radius: 0px;
     max-width: 100%; 
 }
 
-/* #card > .text-content {
-    flex: 1 1 50%; 
-    margin-right: 10px; 
+@media (max-width: 2000px) {
+    .activities-wrapper {
+        width: 80%;
+        margin: auto;
+    }
 }
 
+@media (max-width: 1559px) {
+    .activities-wrapper {
+        width: 100%;
+        margin: auto;
+    }
+}
 
-#card > .text-content > h3,
-#card > .text-content > p, 
-#card > .text-content > h4 {
-    margin: 0 0 10px 0; 
-} */
+@media (max-width: 1189px) {
+    .activities-wrapper {
+        display: block;
+    }
 
-@media (max-width: 768px) {
+
+    
+    .activities-wrapper > img {
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 924px) {
     #headline, #subtitle-section {
         width: 90%; 
+    }
+    
+    .activities-wrapper > img {
+        max-width: 4.5em;  
+        height: 4.5em;
     }
 
     .activities-wrapper > img,
     .activities-wrapper > h4,
     .activities-wrapper > p {
-        flex: 1 1 100%;
-        margin: 10px 0;
+        flex: 1 1 30%;
+        /* margin: 10px 10px; */
     }
 
-    #card {
-        flex-direction: column; 
+    #card { 
         align-items: center; 
     }
 
@@ -222,6 +242,11 @@ img {
 
     h3 {
         font-size: 40px; 
+    }
+
+    #card > img {
+        max-width: 50%; 
+        object-fit: cover;
     }
 }
 
