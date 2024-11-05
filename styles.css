@@ -59,8 +59,8 @@ h3 {
 
 img {
     width: 100%;
+    height: auto;
     max-width: 300px;
-    height: 70%;
     border-radius: 50%;
     object-fit: none;
 } 
@@ -188,6 +188,42 @@ img {
 #card > .text-content > h4 {
     margin: 0 0 10px 0; 
 } */
+
+@media (max-width: 768px) {
+    #headline, #subtitle-section {
+        width: 90%; 
+    }
+
+    .activities-wrapper > img,
+    .activities-wrapper > h4,
+    .activities-wrapper > p {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    #card {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #card > img {
+        max-width: 80%; 
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 40px; 
+    }
+}
 
 
 
