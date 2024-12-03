@@ -217,8 +217,7 @@ img {
     .activities-wrapper > img,
     .activities-wrapper > h4,
     .activities-wrapper > p {
-        flex: 1 1 30%;
-        /* margin: 10px 10px; */
+        /* flex: 1 1 30%; */
     }
 
     #card { 
@@ -240,7 +239,18 @@ img {
     }
 
     h3 {
-        font-size: 40px; 
+        font-size: 50px; 
+    }
+
+    .activities-wrapper {
+        padding: 0px;
+        margin-left: -20px; 
+        margin-top: 0px;
+    }
+
+    .activities-wrapper > p {
+        font-size: 30px;
+        margin-top: 22%;
     }
 
     #card > img {
